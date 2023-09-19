@@ -1,2 +1,2 @@
 # SSEAIRTRICITY-New
-THe estimate cost for electric appliances
+The estimate cost of electric appliances
