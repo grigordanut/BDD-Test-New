@@ -13,3 +13,5 @@ Scenario: As a resident from Wales I need to know estimate of how much electrica
 	| Immersion heater | 35    | 30      | week      | 67   |
 	| Broadband router | 50    | 30      | week      | 67   |
 	| Washing Machine  | 3     | 20      | day       | 67   |
+	| Microwave        | 1     | 15      | day       | 67   |
+	| Slow cooker      | 2     | 40      | day       | 67   |
