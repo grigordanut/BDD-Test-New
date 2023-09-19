@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System;
 using TechTalk.SpecFlow;
 
@@ -23,9 +24,16 @@ namespace HomeAppliancesCostNew.StepDefinitions
         }
 
         [When(@"I add the list appliance ""([^""]*)"" average use (.*), (.*), ""([^""]*)"", (.*), and its average usage and the national average rates")]
-        public void WhenIAddTheListApplianceAverageUseAndItsAverageUsageAndTheNationalAverageRates(string p0, int p1, int p2, string week, int p4)
+        public void WhenIAddTheListApplianceAverageUseAndItsAverageUsageAndTheNationalAverageRates(string appliance, int hours, int minutes, string frequency, int rate)
         {
-            throw new PendingStepException();
+            SelectElement selecteAppliance = new(driver.FindElement(By.XPath("//*[@id=\"appliance\"]")));
+            selecteAppliance.SelectByText(appliance);
+            driver.FindElement(By.XPath("//*[@id=\"hours\"]")).SendKeys("" + hours);
+            driver.FindElement(By.XPath("//*[@id=\"mins\"]")).SendKeys("" + minutes);
+            SelectElement selectedFrequency = new SelectElement(driver.FindElement(By.XPath("//*[@id=\"frequency\"]")));
+            selectedFrequency.SelectByValue(frequency);
+            driver.FindElement(By.XPath("//*[@id=\"kwhcost\"]")).SendKeys("" + rate);
+            driver.FindElement(By.XPath("//*[@id=\"submit\"]")).Click();
         }
 
         [Then(@"I should get the results table with daily, weekly, monthly, and yearly costs is")]
