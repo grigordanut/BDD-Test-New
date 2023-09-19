@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -39,7 +40,15 @@ namespace HomeAppliancesCostNew.StepDefinitions
         [Then(@"I should get the results table with daily, weekly, monthly, and yearly costs is")]
         public void ThenIShouldGetTheResultsTableWithDailyWeeklyMonthlyAndYearlyCostsIs()
         {
-            throw new PendingStepException();
+            string actual = driver.FindElement(By.XPath("//*[@id=\"RootPlaceHolder_RootPlaceHolder_SubHeading\"]/span")).Text;
+            Console.WriteLine(actual);
+            String expected = "This advice applies to Wales";
+            Assert.AreEqual(actual, expected);
+            driver.FindElement(By.XPath("//*[@id=\"appliance_running\"]")).Click();
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("//*[@id=\"reset\"]")).Click();
+            driver.SwitchTo().Alert().Accept();
+            driver.Quit();
         }
     }
 }
