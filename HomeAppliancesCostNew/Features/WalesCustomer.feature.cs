@@ -79,6 +79,8 @@ namespace HomeAppliancesCostNew.Features
         [NUnit.Framework.TestCaseAttribute("Immersion heater", "35", "30", "week", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Broadband router", "50", "30", "week", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Washing Machine", "3", "20", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Microwave", "1", "15", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Slow cooker", "2", "40", "day", "67", null)]
         public virtual void AsAResidentFromWalesINeedToKnowEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -114,11 +116,11 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am a resident from Wales", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.When(string.Format("I add the list appliances \"{0}\" average use {1}, {2}, \"{3}\", {4}, and its average" +
-                            " usage and the national average rates", apliancename, hours, minutes, frequency, rate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I add the list appliance \"{0}\" average use {1}, {2}, \"{3}\", {4}, and its average " +
+                            "usage and the national average rates", apliancename, hours, minutes, frequency, rate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then("I should get the results table with daily, weekly, monthly, and yearly costs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should get the results table with daily, weekly, monthly, and yearly costs is", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
