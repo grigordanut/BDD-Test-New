@@ -76,10 +76,13 @@ namespace HomeAppliancesCostNew.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("As a resident from England estimate of how much electrical appliances cost to run" +
             "")]
-        [NUnit.Framework.TestCaseAttribute("Electric blanket", "3", "30", "day", "30", null)]
-        [NUnit.Framework.TestCaseAttribute("Immersion heater", "8", "20", "day", "30", null)]
-        [NUnit.Framework.TestCaseAttribute("Fan heater", "45", "30", "week", "30", null)]
-        [NUnit.Framework.TestCaseAttribute("Broadband router", "60", "20", "week", "30", null)]
+        [NUnit.Framework.TestCaseAttribute("Electric blanket", "1", "30", "day", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("Immersion heater", "40", "30", "week", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("Broadband router", "50", "20", "week", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("Games console", "1", "10", "day", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("PC or desktop computer", "40", "30", "Week", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("Dishwasher", "2", "20", "day", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("Kettle", "1", "44", "day", "34", null)]
         public virtual void AsAResidentFromEnglandEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;

@@ -9,8 +9,9 @@ Scenario Outline: As a resident from Scotland estimate of how much electrical ap
 
 	Examples: 
 
-	| apliancename     | hours | minutes | frequency | rate |
-	| Electric blanket | 3     | 30      | day       | 30   |
-	| Immersion heater | 8     | 20      | day       | 30   |
-	| Fan heater       | 45    | 30      | week      | 30   |
-	| Broadband router | 60    | 20      | week      | 30   |
+	| apliancename           | hours | minutes | frequency | rate |
+	| Electric blanket       | 1     | 45      | day       | 67   |
+	| Fan heater             | 2     | 30      | day       | 67   |
+	| Broadband router       | 45    | 20      | week      | 67   |
+	| Games console          | 2     | 15      | day       | 67   |
+	| PC or desktop computer | 40    | 30      | week      | 67   |
