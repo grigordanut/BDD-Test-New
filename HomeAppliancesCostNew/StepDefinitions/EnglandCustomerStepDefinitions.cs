@@ -18,7 +18,9 @@ namespace HomeAppliancesCostNew.StepDefinitions
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.citizensadvice.org.uk/");
             driver.FindElement(By.XPath("//*[@id=\"home-extent-popup\"]/div/div/a[1]")).Click();
-            Thread.Sleep(2000);
+            driver.Manage().Cookies.DeleteAllCookies(); //delete all cookies
+            System.Threading.Thread.Sleep(2000);
+            //Thread.Sleep(2000);
             driver.FindElement(By.XPath("//*[@id=\"main-nav\"]/ul/li[4]/a")).Click();
             driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li/a")).Click();
             driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li[6]/a")).Click();
@@ -28,6 +30,7 @@ namespace HomeAppliancesCostNew.StepDefinitions
         public void WhenIAddTheListAppliancesAverageUseAndItsAverageUsageAndTheNationalAverageRate(string appliance, int hours, int minutes, string frequency, int rate)
         {
             SelectElement selecteAppliance = new(driver.FindElement(By.XPath("//*[@id=\"appliance\"]")));
+            
             selecteAppliance.SelectByText(appliance);
             driver.FindElement(By.XPath("//*[@id=\"hours\"]")).SendKeys("" + hours);
             driver.FindElement(By.XPath("//*[@id=\"mins\"]")).SendKeys("" + minutes);
