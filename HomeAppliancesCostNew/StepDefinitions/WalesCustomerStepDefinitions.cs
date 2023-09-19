@@ -6,10 +6,12 @@ namespace HomeAppliancesCostNew.StepDefinitions
     [Binding]
     public class WalesCustomerStepDefinitions
     {
+        IWebDriver driver;
         [Given(@"I am a resident from Wales")]
         public void GivenIAmAResidentFromWales()
         {
-            throw new PendingStepException();
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
         }
 
         [When(@"I add the list appliance ""([^""]*)"" average use (.*), (.*), ""([^""]*)"", (.*), and its average usage and the national average rates")]
