@@ -74,8 +74,8 @@ namespace HomeAppliancesCostNew.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("As a resident from Scotland estimate of how much electrical appliances cost to ru" +
-            "n")]
+        [NUnit.Framework.DescriptionAttribute("As a resident from Scotland I need to know estimate of how much electrical applia" +
+            "nces cost to run")]
         [NUnit.Framework.TestCaseAttribute("Electric blanket", "1", "45", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Fan heater", "2", "30", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Broadband router", "45", "20", "week", "67", null)]
@@ -86,7 +86,7 @@ namespace HomeAppliancesCostNew.Features
         [NUnit.Framework.TestCaseAttribute("Oven", "1", "30", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Iron", "2", "40", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Vacuum cleaner", "1", "10", "day", "67", null)]
-        public virtual void AsAResidentFromScotlandEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
+        public virtual void AsAResidentFromScotlandINeedToKnowEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
@@ -95,8 +95,8 @@ namespace HomeAppliancesCostNew.Features
             argumentsOfScenario.Add("minutes", minutes);
             argumentsOfScenario.Add("frequency", frequency);
             argumentsOfScenario.Add("rate", rate);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a resident from Scotland estimate of how much electrical appliances cost to ru" +
-                    "n", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a resident from Scotland I need to know estimate of how much electrical applia" +
+                    "nces cost to run", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
