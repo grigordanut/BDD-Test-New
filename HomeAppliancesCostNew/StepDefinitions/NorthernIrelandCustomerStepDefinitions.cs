@@ -28,7 +28,12 @@ namespace HomeAppliancesCostNew.StepDefinitions
         [Then(@"I should get the results message as ‘The advice on this website doesn’t cover Northern Ireland’")]
         public void ThenIShouldGetTheResultsMessageAsTheAdviceOnThisWebsiteDoesnTCoverNorthernIreland()
         {
-           
+            string sentance = driver.FindElement(By.XPath("//*[@id=\"cads-main-content\"]/div/div/div/main/div[2]/p[1]")).Text;
+            string expected = string.Join(" ", sentance.Split(' ').Take(9));
+            Console.WriteLine(expected);
+            String actual = "The advice on this website doesn’t cover Northern Ireland,";
+            Assert.AreEqual(actual, expected);
+            driver.Quit();
         }
     }
 }
