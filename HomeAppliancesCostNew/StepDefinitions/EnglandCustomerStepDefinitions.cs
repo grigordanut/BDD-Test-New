@@ -20,7 +20,6 @@ namespace HomeAppliancesCostNew.StepDefinitions
             driver.FindElement(By.XPath("//*[@id=\"home-extent-popup\"]/div/div/a[1]")).Click();
             driver.Manage().Cookies.DeleteAllCookies(); //delete all cookies
             System.Threading.Thread.Sleep(2000);
-            //Thread.Sleep(2000);
             driver.FindElement(By.XPath("//*[@id=\"main-nav\"]/ul/li[4]/a")).Click();
             driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li/a")).Click();
             driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li[6]/a")).Click();
