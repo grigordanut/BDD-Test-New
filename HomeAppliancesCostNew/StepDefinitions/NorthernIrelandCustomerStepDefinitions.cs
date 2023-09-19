@@ -21,7 +21,8 @@ namespace HomeAppliancesCostNew.StepDefinitions
         [When(@"I select This advice applies to Northern Ireland")]
         public void WhenISelectThisAdviceAppliesToNorthernIreland()
         {
-            
+            driver.FindElement(By.XPath("//*[@id=\"home-extent-popup\"]/div/div/a[2]")).Click();
+            Thread.Sleep(2000);
         }
 
         [Then(@"I should get the results message as ‘The advice on this website doesn’t cover Northern Ireland’")]
