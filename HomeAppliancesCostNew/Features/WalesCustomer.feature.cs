@@ -78,7 +78,7 @@ namespace HomeAppliancesCostNew.Features
             "s cost to run")]
         [NUnit.Framework.TestCaseAttribute("Immersion heater", "35", "30", "week", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Broadband router", "50", "30", "week", "67", null)]
-        [NUnit.Framework.TestCaseAttribute("Washing Machine", "3", "20", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Washing machine", "3", "20", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Microwave", "1", "15", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Slow cooker", "2", "40", "day", "67", null)]
         public virtual void AsAResidentFromWalesINeedToKnowEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
