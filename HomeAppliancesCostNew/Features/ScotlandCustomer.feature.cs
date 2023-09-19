@@ -81,6 +81,11 @@ namespace HomeAppliancesCostNew.Features
         [NUnit.Framework.TestCaseAttribute("Broadband router", "45", "20", "week", "67", null)]
         [NUnit.Framework.TestCaseAttribute("Games console", "2", "15", "day", "67", null)]
         [NUnit.Framework.TestCaseAttribute("PC or desktop computer", "40", "30", "week", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Dehumidifier", "30", "25", "week", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Dishwasher", "2", "25", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Oven", "1", "30", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Iron", "2", "40", "day", "67", null)]
+        [NUnit.Framework.TestCaseAttribute("Vacuum cleaner", "1", "10", "day", "67", null)]
         public virtual void AsAResidentFromScotlandEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;

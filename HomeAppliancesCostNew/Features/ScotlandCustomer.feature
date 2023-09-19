@@ -15,3 +15,8 @@ Scenario Outline: As a resident from Scotland estimate of how much electrical ap
 	| Broadband router       | 45    | 20      | week      | 67   |
 	| Games console          | 2     | 15      | day       | 67   |
 	| PC or desktop computer | 40    | 30      | week      | 67   |
+	| Dehumidifier           | 30    | 25      | week      | 67   |
+	| Dishwasher             | 2     | 25      | day       | 67   |
+	| Oven                   | 1     | 30      | day       | 67   |
+	| Iron                   | 2     | 40      | day       | 67   |
+	| Vacuum cleaner         | 1     | 10      | day       | 67   |

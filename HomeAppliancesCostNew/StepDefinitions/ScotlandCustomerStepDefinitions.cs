@@ -42,7 +42,7 @@ namespace HomeAppliancesCostNew.StepDefinitions
         {
             string actual = driver.FindElement(By.XPath("//*[@id=\"RootPlaceHolder_RootPlaceHolder_SubHeading\"]/span")).Text;
             Console.WriteLine(actual);
-            String expected = "This advice applies to England";
+            String expected = "This advice applies to Scotland";
             Assert.AreEqual(actual, expected);
             driver.FindElement(By.XPath("//*[@id=\"appliance_running\"]")).Click();
             Thread.Sleep(3000);

@@ -80,7 +80,7 @@ namespace HomeAppliancesCostNew.Features
         [NUnit.Framework.TestCaseAttribute("Immersion heater", "40", "30", "week", "34", null)]
         [NUnit.Framework.TestCaseAttribute("Broadband router", "50", "20", "week", "34", null)]
         [NUnit.Framework.TestCaseAttribute("Games console", "1", "10", "day", "34", null)]
-        [NUnit.Framework.TestCaseAttribute("PC or desktop computer", "40", "30", "Week", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("PC or desktop computer", "40", "30", "week", "34", null)]
         [NUnit.Framework.TestCaseAttribute("Dishwasher", "2", "20", "day", "34", null)]
         [NUnit.Framework.TestCaseAttribute("Kettle", "1", "44", "day", "34", null)]
         public virtual void AsAResidentFromEnglandEstimateOfHowMuchElectricalAppliancesCostToRun(string apliancename, string hours, string minutes, string frequency, string rate, string[] exampleTags)

@@ -14,6 +14,6 @@ Scenario Outline: As a resident from England estimate of how much electrical app
 	| Immersion heater       | 40    | 30      | week      | 34   |
 	| Broadband router       | 50    | 20      | week      | 34   |
 	| Games console          | 1     | 10      | day       | 34   |
-	| PC or desktop computer | 40    | 30      | Week      | 34   |
+	| PC or desktop computer | 40    | 30      | week      | 34   |
 	| Dishwasher             | 2     | 20      | day       | 34   |
 	| Kettle                 | 1     | 44      | day       | 34   |
