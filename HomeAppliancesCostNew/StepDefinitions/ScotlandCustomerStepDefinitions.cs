@@ -18,10 +18,17 @@ namespace HomeAppliancesCostNew.StepDefinitions
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.citizensadvice.org.uk/");
             driver.FindElement(By.XPath("//*[@id=\"home-extent-popup\"]/div/div/a[3]")).Click();
+            //Click the button I'm find with cookies 
+            driver.FindElement(By.XPath("/html/body/div[2]/div/button")).Click();
+
             Thread.Sleep(2000);
             driver.FindElement(By.XPath("//*[@id=\"main-nav\"]/ul/li[4]/a")).Click();
-            driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li/a")).Click();
-            driver.FindElement(By.XPath("//*[@id=\"main\"]/div[2]/div/div[2]/ul/li[6]/a")).Click();
+
+            //Click Your Energy Supplier
+            driver.FindElement(By.XPath("//*[@id=\"cads-main-content\"]/div/div/div/main/div[1]/nav/ul/li/a")).Click();
+
+            //Click Compare how much electrical appliances cost to use
+            driver.FindElement(By.XPath("//*[@id=\"cads-main-content\"]/div/div/div/main/div[1]/nav/ul/li[6]/a")).Click();
         }
 
         [When(@"I add the list appliances ""([^""]*)"" average use (.*), (.*), ""([^""]*)"", (.*), and its average usage and the national average rates")]
