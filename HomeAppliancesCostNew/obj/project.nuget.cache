@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x0QdFhhoTNiYl4sknGYMfy75srGYvyXxtFN2uxvrWEsDd8Oqmw0VYY6yHWbXU4sYipTdGOYj42UAT9mNFH7xcg==",
+  "dgSpecHash": "sk7fFt1L1GFhiiXwX4O+M/3Oo1tymKgDok9j1Evt1nBUTiMEn42CXQhoMtF1elqc3Uyz+3O2xKDnFSjTVENgZw==",
   "success": true,
   "projectFilePath": "C:\\Users\\danut\\Source\\Repos\\HomeAppliancesCostNew\\HomeAppliancesCostNew\\HomeAppliancesCostNew.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\danut\\.nuget\\packages\\selenium.support\\4.12.4\\selenium.support.4.12.4.nupkg.sha512",
     "C:\\Users\\danut\\.nuget\\packages\\selenium.webdriver\\4.12.4\\selenium.webdriver.4.12.4.nupkg.sha512",
     "C:\\Users\\danut\\.nuget\\packages\\selenium.webdriver.chromedriver\\117.0.5938.8800\\selenium.webdriver.chromedriver.117.0.5938.8800.nupkg.sha512",
+    "C:\\Users\\danut\\.nuget\\packages\\selenium.webdriver.msedgedriver\\115.0.1901.200\\selenium.webdriver.msedgedriver.115.0.1901.200.nupkg.sha512",
     "C:\\Users\\danut\\.nuget\\packages\\specflow\\3.9.40\\specflow.3.9.40.nupkg.sha512",
     "C:\\Users\\danut\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",
     "C:\\Users\\danut\\.nuget\\packages\\specflow.nunit\\3.9.40\\specflow.nunit.3.9.40.nupkg.sha512",

@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Threading;
@@ -16,6 +17,7 @@ namespace HomeAppliancesCostNew.StepDefinitions
         public void GivenIAmAResidentFromWales()
         {
             driver = new ChromeDriver();
+            //driver = new EdgeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.citizensadvice.org.uk/");
             driver.FindElement(By.XPath("//*[@id=\"home-extent-popup\"]/div/div/a[4]")).Click();
